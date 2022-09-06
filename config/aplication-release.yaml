@@ -1,0 +1,34 @@
+server:
+  port: 8000
+  runMode: release
+  logLevel: debug # debug info warn error
+
+database:
+  type: mysql
+  host: localhost
+  port: 3306
+  username: root
+  password: zzgeek
+  dbname: test
+  maxIdleConn: 10
+  maxOpenConn: 30
+  connMaxLifetime: 300
+
+redis:
+  host: localhost
+  port: 6379
+  password:
+  db: 0
+  maxIdle: 16
+  maxActive: 0
+  idleTimeOut: 300
+
+jwt:
+  seed: zzgeeks900123!@#
+  tokenExpired: 1
+  issuer: zzgeek
+
+qiniu:
+  accessKey: a5vhAGQErwrixYoGL6IQPDpnok1OZo17rniNKx7t
+  secretKey: 42tXmNfzEEW29kh_eVActbg7d29mdB8D2USv8b3o
+  bucket: zzgeek
